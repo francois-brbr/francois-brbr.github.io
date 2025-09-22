@@ -21,14 +21,6 @@ body {
     background-color: #f9f9f9;
 }
 
-section h2 {
-    text-align: center;
-    margin: 0 auto 3rem; /* Marge en haut à 0, centrage automatique, marge en bas à 3rem */
-    font-size: 2rem;
-    color: var(--secondary-color);
-    padding-bottom: 1rem; /* Espacement supplémentaire en bas du texte */
-}
-
 
 .container {
     width: 90%;
@@ -108,8 +100,9 @@ nav .container {
 
 .about-text h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     color: var(--dark-color);
+    text-align: center;
 }
 
 .highlight {
