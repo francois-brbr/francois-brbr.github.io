@@ -23,11 +23,12 @@ body {
 
 section h2 {
     text-align: center;
-    margin: 0 auto 3rem; /* Marge en haut à 0, centrage automatique, marge en bas à 3rem */
+    margin: 0 auto 3rem;
     font-size: 2rem;
     color: var(--secondary-color);
-    padding-bottom: 1rem; /* Espacement supplémentaire en bas du texte */
+    padding-bottom: 1rem;
 }
+
 
 
 .container {
@@ -284,12 +285,15 @@ nav .container {
 
 .timeline-item ul {
     margin-top: 1rem;
-    padding-left: 1.5rem;
+    padding-left: 1.5rem; /* Espace pour les puces */
+    margin-left: 0.5rem;  /* Alignement supplémentaire si nécessaire */
 }
 
 .timeline-item li {
     margin-bottom: 0.5rem;
+    text-align: left; /* Assure que le texte est aligné à gauche */
 }
+
 
 /* Section Projets */
 #projects {
