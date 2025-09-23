@@ -52,6 +52,7 @@ nav .container {
     padding: 1rem 2rem;
 }
 
+
 .logo {
     font-size: 1.5rem;
     color: var(--secondary-color);
@@ -73,6 +74,36 @@ nav .container {
 .nav-links a:hover {
     color: var(--primary-color);
 }
+
+/* Survol des liens de navigation */
+.nav-links li a:hover {
+    color: #0077b6; /* Change la couleur au survol */
+    transition: color 0.3s ease; /* Animation fluide */
+    text-decoration: underline; /* Optionnel : soulignement au survol */
+}
+
+/* Style pour les liens actifs (optionnel) */
+.nav-links li a:active {
+    color: #005f8d;
+}
+
+/* Style pour les liens de contact dans la navigation */
+.contact-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-nav a {
+    color: #333;
+    font-size: 18px; /* Taille réduite */
+    transition: color 0.3s ease;
+}
+
+.contact-nav a:hover {
+    color: #0077b6; /* Même couleur que les liens de navigation au survol */
+}
+
 
 /* Section À propos */
 #about {
