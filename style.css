@@ -26,14 +26,14 @@ section h2 {
     margin: 0 auto 1rem;
     font-size: 2rem;
     color: var(--secondary-color);
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 section h1 {
     margin: 0 auto 1rem;
     font-size: 2rem;
     color: var(--secondary-color);
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .container {
