@@ -23,13 +23,11 @@ body {
 
 section h2 {
     text-align: center;
-    margin: 0 auto 3rem;
+    margin: 0 auto 1rem;
     font-size: 2rem;
     color: var(--secondary-color);
     padding-bottom: 1rem;
 }
-
-
 
 .container {
     width: 90%;
