@@ -29,6 +29,13 @@ section h2 {
     padding-bottom: 1rem;
 }
 
+section h1 {
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding-bottom: 1rem;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -232,6 +239,7 @@ nav .container {
 /* Section Compétences */
 #skills {
     background-color: #f9f9f9;
+    align-items: center;
 }
 
 .skills-grid {
