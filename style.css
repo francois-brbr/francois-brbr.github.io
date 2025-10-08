@@ -43,6 +43,23 @@ section h1 {
     padding: 2rem 0;
 }
 
+.lang-selector {
+    margin-left: 20px;
+}
+
+.lang-selector select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.lang-selector select:focus {
+    outline: none;
+}
+
 /* Barre de navigation */
 nav {
     background-color: white;
