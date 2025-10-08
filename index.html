@@ -1,218 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>François Barbier | Data Engineer</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>François Barbier | Data Engineer</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Barre de navigation -->
-    <nav>
-        <div class="container">
-            <h1 class="logo">François Barbier</h1>
-            <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#education">Formation</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="logo"><span>François Barbier</span></a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#education">Formation</a>
+        <a href="#projects">Projets</a>
+        <a href="#volontariat">Volontariat</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="Langue">
+          <option value="fr" selected>🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+        </select>
+
+        <a class="icon" href="https://github.com/francois-brbr" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a class="icon" href="https://www.linkedin.com/in/fran%C3%A7ois-barbier-a20870231/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a class="icon" href="mailto:fr.barbier.pro@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <!-- HERO / ABOUT -->
+    <header id="about" class="section card reveal">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="badge">🟢 Disponible pour de nouvelles opportunités</span>
+          <h1>Data <span class="accent">Engineer</span> • Data <span class="accent">Analyst</span> • Analytics <span class="accent">Engineer</span></h1>
+          <p class="lead">
+            Diplômé de l'école d'ingénieur <strong>ISIMA Clermont Auvergne INP</strong>, spécialisé en <strong>Data Engineering</strong> et <strong>Business Intelligence</strong>.
+            Je conçois des pipelines fiables, des dashboards actionnables et j'aime transformer la donnée en décisions.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="assets/CV_Francois_BARBIER.pdf" download>📥 Télécharger mon CV</a>
+            <a class="btn ghost" href="#contact">✉️ Me contacter</a>
+          </div>
+
+          <div class="social-inline">
+            <a class="icon" href="https://github.com/francois-brbr" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a class="icon" href="https://www.linkedin.com/in/fran%C3%A7ois-barbier-a20870231/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a class="icon" href="mailto:fr.barbier.pro@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <aside class="profile card glass">
+          <img src="assets/profile.jpg" alt="François Barbier" class="profile-img">
+          <div class="profile-meta">
+            <strong>François Barbier</strong>
+            <div class="muted">Data Engineer — Bordeaux, France</div>
+          </div>
+          <div class="skill-tags">
+            <span>Power BI</span>
+            <span>DBT</span>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section card reveal">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class="fab fa-python"></i><h4>Python</h4></div>
+        <div class="skill"><i class="fas fa-database"></i><h4>SQL</h4></div>
+        <div class="skill"><i class="fas fa-chart-line"></i><h4>Power BI</h4></div>
+        <div class="skill"><i class="fa fa-bar-chart"></i><h4>Tableau</h4></div>
+        <div class="skill"><i class="fas fa-cloud"></i><h4>DBT</h4></div>
+        <div class="skill"><i class="fab fa-docker"></i><h4>Docker</h4></div>
+        <div class="skill"><i class="fas fa-recycle"></i><h4>Apache Airflow</h4></div>
+        <div class="skill"><i class="fas fa-server"></i><h4>PostgreSQL</h4></div>
+        <div class="skill"><i class="fas fa-server"></i><h4>Oracle</h4></div>
+        <div class="skill"><i class="fas fa-server"></i><h4>MariaDB</h4></div>
+        <div class="skill"><i class="fas fa-server"></i><h4>SQLite</h4></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section card reveal">
+      <h2>Expérience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="time">Avr. 2025 — Sep. 2025</div>
+          <div class="content">
+            <h3>Data Engineer / Data Analyst</h3>
+            <div class="muted">Atos - Eviden | Bordeaux, France</div>
+            <ul>
+              <li>Développement d'un pipeline automatisé de données financières sur des indices boursiers.</li>
+              <li>Tableaux de bord Power BI (Python, APIs, PostgreSQL, DBT, Docker, Airflow).</li>
+              <li>Mise à jour quotidienne des cours et KPIs.</li>
             </ul>
+          </div>
+        </article>
 
-            <div class="lang-selector">
-                <select id="language" onchange="changeLanguage()">
-                    <option value="fr">🇫🇷 Français</option>
-                    <option value="en">🇬🇧 English</option>
-                </select>
-            </div>
-            <!-- Ajout des liens de contact à droite -->
-            <div class="contact-nav">
-                <a href="https://github.com/francois-brbr" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/fran%C3%A7ois-barbier-a20870231/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:fr.barbier.pro@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- Section À propos -->
-    <section id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="availability">
-                        <span class="available-badge">🟢 Disponible pour de nouvelles opportunités</span>
-                    </div>
-                    <h1>Data <span class="highlight">Engineer</span> | Data <span class="highlight">Analyst</span> | Analytics <span class="highlight">Engineer</span></h1>
-                    <p>
-                        Diplômé de l'école d'ingénieur <strong>ISIMA Clermont Auvergne INP</strong>, spécialisé en <strong>Data Engineering</strong> et <strong>Business Intelligence</strong>, je m'intéresse à l'univers de la data et à la transformation digitale.
-                        Motivé à contribuer à des projets innovants et évoluer dans un environnement collaboratif, je suis prêt à mettre en oeuvre mon expertise technique et mon aspect relationnel au service de vos projets.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="assets/CV_Francois_BARBIER.pdf" class="btn-secondary" download>📥 Télécharger mon CV</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/francois-brbr" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/fran%C3%A7ois-barbier-a20870231/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:fr.barbier.pro@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="profile-container">
-                    <img src="assets/profile.jpg" alt="François Barbier" class="profile-img">
-                </div>
-            </div>
-        </div>
+        <article class="timeline-item">
+          <div class="time">Mar. 2024 — Jul. 2024</div>
+          <div class="content">
+            <h3>Software Engineer Intern</h3>
+            <div class="muted">Thales Alenia Space | Rome, Italie</div>
+            <ul>
+              <li>Conversion d'algorithmes de traitement d'images satellite vers microprocesseur embarqué (Python, C++, OpenCL).</li>
+              <li>Collaboration internationale (ESA).</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="skills">
-        <div class="container">
-            <h2>Compétences</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Power BI</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fa fa-bar-chart"></i>
-                    <h3>Tableau</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>DBT</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-docker"></i>
-                    <h3>Docker</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-recycle"></i>
-                    <h3>Apache Airflow</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>PostgreSQL</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Oracle</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>MariaDB</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>SQLite</h3>
-                </div>
-            </div>
-        </div>
+    <!-- EDUCATION -->
+    <section id="education" class="section card reveal">
+      <h2>Formation</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="time">Sep. 2022 — Sep. 2025</div>
+          <div class="content">
+            <h3>Diplôme d'ingénieur informatique — ISIMA</h3>
+            <div class="muted">ISIMA - Clermont Auvergne INP | Clermont-Ferrand, France</div>
+            <ul>
+              <li>Data Mining — BI — Bases de données — Big Data — ETL/ELT — APIs</li>
+              <li>Talend — n8n — Python — R — C/C++ — Java</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="time">Sep. 2020 — Juin 2022</div>
+          <div class="content">
+            <h3>Classe Préparatoire (PCSI/PC)</h3>
+            <div class="muted">Lycée Saliège | Toulouse, France</div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Section Expérience -->
-    <section id="experience">
-        <div class="container">
-            <h2>Expérience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Data Engineer / Data Analyst</h3>
-                    <p class="company">Atos - Eviden | Bordeaux, France</p>
-                    <p class="date">Avr. 2025 - Sep. 2025</p>
-                    <ul>
-                        <li>Développement d'un pipeline automatisé de données financières sur des indices boursiers.</li>
-                        <li>Génération de tableaux de bord interactifs sur Power BI (Python, APIs, PostgreSQL, DBT, Docker, Apache Airflow).</li>
-                        <li>Mise à jour quotidienne des cours des actions et des principaux indicateurs de performance (KPIs).</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Software Engineer Intern</h3>
-                    <p class="company">Thales Alenia Space | Rome, Italie</p>
-                    <p class="date">Mar. 2024 - Jul. 2024</p>
-                    <ul>
-                        <li>Conversion d'algorithmes de traitement d'images satellite vers un microprocesseur embarqué (Python, C++, OpenCL).</li>
-                        <li>Collaboration avec une équipe internationale (Agence Spatiale Européenne).</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section card reveal">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h4>Analyse de données — Limagrain</h4>
+          <p>Étude et optimisation du procédé d'analyse de qualité des données de génotypage (Python, R).</p>
+          <p class="muted"><strong>Durée :</strong> Oct. 2024 — Mar. 2025 (180h)</p>
         </div>
+
+        <div class="project">
+          <h4>Plateforme de visualisation — santé</h4>
+          <p>Conception et mise en œuvre d'une plateforme de visualisation de données de santé (Python, Dash).</p>
+          <p class="muted"><strong>Durée :</strong> Fév. 2024</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Section Formation -->
-    <section id="education">
-        <div class="container">
-            <h2>Formation</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Diplôme d'ingénieur informatique - Filière Systèmes d'information et aide à la décision (Data)</h3>
-                    <p class="company">ISIMA - Clermont Auvergne INP | Clermont-Ferrand, France</p>
-                    <p class="date">Sep. 2022 - Sep. 2025</p>
-                    <ul>
-                        <li> Data Mining - Business Intelligence - Développement et fondement des bases de données -
-                            Analyse de données - Web Services - Big Data - Intégration d'applications(APIs) - Conception ETL/ELT</li>
-                        <li> Talend - n8n - Python - R - C/C++ - Java</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Classe Préparatoire aux Grandes Écoles</h3>
-                    <p class="company">Lycée Saliège - Option PCSI/PC | Toulouse, France</p>
-                    <p class="date">Sep. 2020 - Juin 2022</p>
-                </div>
-            </div>
-        </div>
+    <!-- VOLONTARIAT -->
+    <section id="volontariat" class="section card reveal">
+      <h2>Volontariat</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="time">2023 — Présent</div>
+          <div class="content">
+            <h3>Analyse de données bénévole</h3>
+            <div class="muted">Association Data4Good | Bordeaux</div>
+            <p class="muted">Ateliers de nettoyage & visualisation, mise en place de KPI pour mesurer l'impact.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="time">2022</div>
+          <div class="content">
+            <h3>Animateur — Bibliothèque de quartier</h3>
+            <div class="muted">Toulouse</div>
+            <p class="muted">Ateliers d'initiation à l'informatique et à la structuration des données pour ados.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Analyse de données - Limagrain</h3>
-                    <p>Étude et optimisation du procédé d'analyse de qualité des données de génotypage (Python, R).</p>
-                    <p><strong>Durée :</strong> Oct. 2024 - Mar. 2025 (180h)</p>
-                </div>
-                <div class="project-card">
-                    <h3>Plateforme de visualisation de données de santé</h3>
-                    <p>Conception et mise en œuvre d'une plateforme de visualisation de données de santé (Python, Dash).</p>
-                    <p><strong>Durée :</strong> Fév. 2024</p>
-                </div>
-            </div>
-        </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section card reveal">
+      <h2>Rentrons en contact !</h2>
+      <p class="muted">N'hésitez pas à me contacter pour discuter de votre prochain projet ou d'une opportunité.</p>
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:fr.barbier.pro@gmail.com">✉️ Envoyer un e-mail</a>
+        <a class="btn ghost" href="assets/CV_Francois_BARBIER.pdf" download>📥 Télécharger mon CV</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/francois-brbr" target="_blank" title="GitHub" class="social"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fran%C3%A7ois-barbier-a20870231/" target="_blank" title="LinkedIn" class="social"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:fr.barbier.pro@gmail.com" title="Email" class="social"><i class="fas fa-envelope"></i></a>
+      </div>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Rentrons en contact !</h2>
-            <div class="contact-content">
-                <p>N'hésitez pas à me contacter pour discuter de votre prochain projet ou d'une opportunité. </p>
-                    <div class="social-links">
-                        <a href="https://github.com/francois-brbr" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/fran%C3%A7ois-barbier-a20870231/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:fr.barbier.pro@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pied de page -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 François Barbier. Tous droits réservés.</p>
-        </div>
+    <footer class="footer">
+      <div>&copy; 2025 François Barbier — Tous droits réservés.</div>
     </footer>
+  </main>
 
-    <script src="script.js"></script>
+  <button id="toTop" class="to-top" aria-label="Retour en haut"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
 </body>
 </html>
